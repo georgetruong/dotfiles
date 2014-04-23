@@ -12,6 +12,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias rm="rm -i"
+alias append_ctags="ctags -R --exclude=.git --exclude=log --exclude=tmp --append=yes *"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
