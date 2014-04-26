@@ -38,4 +38,3 @@ files.each do |file|
   symlink_file(file, dotfiles_dir)
   puts "\n"
 end
-
