@@ -7,7 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="georgetruong"
 
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
@@ -78,6 +77,11 @@ export ARCHFLAGS="-arch x86_64"
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# rbenv"
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# RS aliases
+alias dsapi_worker="QUEUE=* rake environment resque:work"
+alias npm-exec='PATH=$(npm bin):$PATH'
+
