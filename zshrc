@@ -83,5 +83,9 @@ eval "$(rbenv init -)"
 
 # RS aliases
 alias dsapi_worker="QUEUE=* rake environment resque:work"
-alias npm-exec='PATH=$(npm bin):$PATH'
 
+# node.js with coffeescript aliases
+alias npm-exec='PATH=$(npm bin):$PATH'
+alias coff-comp='npm-exec grunt coffee:compile'
+alias coff-node='coff-comp && node'
+alias coff-cake='coff-comp && npm-exec cake test'
