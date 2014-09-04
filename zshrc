@@ -10,6 +10,7 @@ ZSH_THEME="georgetruong"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
+
 alias rm="rm -i"
 alias vi="vim"
 alias append_ctags="ctags -R --exclude=.git --exclude=log --exclude=tmp --append=yes *"
@@ -76,6 +77,9 @@ export ARCHFLAGS="-arch x86_64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# java
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
