@@ -31,6 +31,8 @@ set laststatus=2        " Always show status line.
 set gdefault            " assume the /g flag on :s substitutions to replace all matches in a line
 set autoindent          " always set autoindenting on
 
+set tabstop=4
+
 set bg=dark
 colorscheme distinguished
 colors grb256
@@ -54,6 +56,9 @@ au BufWritePre *.erb :%s/\s\+$//e
 au BufWritePre *.js :%s/\s\+$//e
 au BufWritePre *.coffee :%s/\s\+$//e
 au BufWritePre *.feature :%s/\s\+$//e
+
+" Treat handlebar files like HTML
+au BufNewFile,BufRead *.handlebars set file type=html
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
