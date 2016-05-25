@@ -55,6 +55,7 @@ au BufWritePre *.rb :%s/\s\+$//e
 au BufWritePre *.erb :%s/\s\+$//e
 au BufWritePre *.js :%s/\s\+$//e
 au BufWritePre *.coffee :%s/\s\+$//e
+au BufWritePre *.slim :%s/\s\+$//e
 au BufWritePre *.feature :%s/\s\+$//e
 
 " Treat handlebar files like HTML

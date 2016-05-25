@@ -81,15 +81,10 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 # java
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# RS aliases
-alias dsapi_worker="QUEUE=* rake environment resque:work"
-
 # node.js with coffeescript aliases
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias coff-comp='npm-exec grunt coffee:compile'
 alias coff-node='coff-comp && node'
 alias coff-cake='coff-comp && npm-exec cake test'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
